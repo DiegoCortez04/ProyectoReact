@@ -8,6 +8,8 @@ import { BrowserRouter as Router,Routes, Route } from 'react-router-dom';
 import Alumnos from './componentes/alumnos/Alumnos';
 import Calificaciones from './componentes/calificaciones/Calificaciones';
 import Carreras from './componentes/carreras/Carreras';
+import NuevoAlumno from './componentes/alumnos/nuevoalumno';
+
 
 function App (){
   return (
@@ -26,6 +28,7 @@ function App (){
 
     <Routes>
       <Route path='/Alumnos' element = {<Alumnos/>} />
+      <Route path='/nuevo-alumno' element = {<NuevoAlumno/>} />
       <Route path='/Carreras' element = {<Carreras/>} />
       <Route path='/calificaciones' element = {<Calificaciones/>} />
     </Routes>
